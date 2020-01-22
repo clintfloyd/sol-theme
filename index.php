@@ -75,10 +75,11 @@ get_header();
 			$image = types_render_field("featured-image", array( "output" => "raw"));
 			$link = types_render_field("link", array( "output" => "raw"));
 			$color = types_render_field("color", array( "output" => "raw"));
+			$textColor = types_render_field("text-color", array( "output" => "raw"));
 		?>
 						<div class="container <?php echo $size; ?>" style="background-color: <?php echo $color; ?>;">
 							<div class="copy-wrapper">
-								<a href="<?php echo $link; ?>">
+								<a href="<?php echo $link; ?>" style="color: <?php echo $textColor; ?>;">
 									<h3><?php echo $title; ?></h3>
 									<h4><?php echo $sub_heading; ?></h4>
 								</a>
