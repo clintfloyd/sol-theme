@@ -74,8 +74,9 @@ get_header();
 			$sub_heading = types_render_field("sub-text", array( "output" => "raw"));
 			$image = types_render_field("featured-image", array( "output" => "raw"));
 			$link = types_render_field("link", array( "output" => "raw"));
+			$color = types_render_field("color", array( "output" => "raw"));
 		?>
-						<div class="container <?php echo $size; ?>">
+						<div class="container <?php echo $size; ?>" style="background-color: <?php echo $color; ?>;">
 							<div class="copy-wrapper">
 								<a href="<?php echo $link; ?>">
 									<h3><?php echo $title; ?></h3>
