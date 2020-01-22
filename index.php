@@ -53,7 +53,9 @@ get_header();
 	}
 ?>
 	<header>
-		<?php add_revslider('slider-2'); ?>
+		<?php
+		echo do_shortcode('[smartslider3 slider=2]');
+		?>
 	</header>
 
 	<div class="flexy">
@@ -75,11 +77,13 @@ get_header();
 		?>
 						<div class="container <?php echo $size; ?>">
 							<div class="copy-wrapper">
-								<h3><?php echo $title; ?></h3>
-								<h4><?php echo $sub_heading; ?></h4>
+								<a href="<?php echo $link; ?>">
+									<h3><?php echo $title; ?></h3>
+									<h4><?php echo $sub_heading; ?></h4>
+								</a>
 							</div>
 							<div class="image-wrapper">
-								<figure></figure>
+								<figure style="background-image: url('<?php echo $image; ?>'); "></figure>
 							</div>
 						</div>
 		<?php endwhile;?>
