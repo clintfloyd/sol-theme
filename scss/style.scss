@@ -380,6 +380,9 @@ body{
   .single_product_wrapper_top{
     display: grid;
     grid-template-columns: 50% 50%;
+    @media(max-width: 650px){
+      grid-template-columns: 100%;
+    }
     > div{
       width: calc(100%) !important;
       padding: 50px;
