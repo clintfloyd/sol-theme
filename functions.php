@@ -815,7 +815,6 @@ function twentytwenty_get_elements_array() {
 
 // Our hooked in function - $fields is passed via the filter!
 function custom_override_checkout_fields( $fields ) {
-
   unset($fields['billing']['billing_state']);
   unset($fields['billing']['billing_address_2']);
   unset($fields['billing']['billing_company']);
@@ -845,7 +844,7 @@ function custom_override_checkout_fields( $fields ) {
 
   $fields['shipping']['shipping_city']['label'] = "Emirate";
   $fields['shipping']['shipping_city']['type'] = "select";
-   $fields['shipping']['shipping_city']['options'] = array(
+  $fields['shipping']['shipping_city']['options'] = array(
       '' => 'Select your emirate',
       'dubai' => 'Dubai',
       'abu dhabi' => 'Abu Dhabi',

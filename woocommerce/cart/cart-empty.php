@@ -17,6 +17,8 @@
 
 defined( 'ABSPATH' ) || exit;
 
+
+echo '<div class="cartIsempty"><div>';
 /*
  * @hooked wc_empty_cart_message - 10
  */
@@ -29,3 +31,17 @@ if ( wc_get_page_id( 'shop' ) > 0 ) : ?>
 		</a>
 	</p>
 <?php endif; ?>
+
+</div>
+</div>
+
+<style>
+header.entry-header{
+	display: none;
+}
+p.has-text-align-center,
+h3.has-text-align-center{
+	display: none;
+}
+
+</style>

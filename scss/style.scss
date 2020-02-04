@@ -1,3 +1,4 @@
+$font: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
 @media (min-width: 700px){
 .site-logo img {
   max-height: 6rem;
@@ -933,5 +934,96 @@ body{
 @media(max-width:480px){
   #wdi_feed_0 .wdi_feed_item {
     width: 50% !important;
+  }
+}
+
+
+.woocommerce-account .woocommerce-MyAccount-navigation,
+.woocommerce-account .woocommerce-MyAccount-content{
+  float: none;
+  width: 100%;
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation{
+  border-bottom: 1px solid silver;
+  > ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    > li{
+      margin: 0 3px 0 0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      border: 1px solid silver;
+      border-radius: 4px 4px 0 0;
+      border-bottom: none;
+      > a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: black;
+        font-family: $font;
+        font-size: 0.8em;
+        &:before{
+          margin-right: 5px;
+        }
+      }
+
+      &.is-active{
+        background: #ffd145;
+        border-color: #ffd145;
+      }
+    }
+  }
+}
+.woocommerce-account .woocommerce-MyAccount-content{
+  padding-top: 40px;
+  padding-bottom: 120px;
+  min-height: 800px;
+}
+
+.cartIsempty{
+  display: flex;
+  min-height: 400px;
+  justify-content: center;
+  align-items: center;
+  > div{
+    text-align: center;
+    > p{
+      background: unset;
+      border: unset;
+      padding: 0;
+      &:before{
+        content: "";
+      }
+    }
+  }
+}
+
+.pointsLabel{
+  display: block;
+  text-align: center;;
+  font-size: 1.8em;
+  font-weight: bold;
+  padding: 40px 0;
+  font-family: $font;
+}
+
+.summary{
+  &.entry-summary{
+    > span{
+      display: block;
+      background: #eabc2e;
+      text-align: center;
+      padding: 5px;
+      border-radius: 4px;
+      margin-bottom: 20px;
+      font-size: 0.7em;
+      color: #fff;
+    }
   }
 }
