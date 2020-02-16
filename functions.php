@@ -917,3 +917,10 @@ function change_existing_currency_symbol( $currency_symbol, $currency ) {
      }
      return $currency_symbol;
 }
+
+
+$preview = get_stylesheet_directory() . '/woocommerce/emails/woo-preview-emails.php';
+
+if(file_exists($preview)) {
+    require $preview;
+}

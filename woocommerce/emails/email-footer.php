@@ -47,11 +47,13 @@ $credit = "
 <!-- End Content -->
 </td>
 
-											<tr>
-												<td>
-													<img src="../wp-content/themes/soleil/woocommerce/emails/border-bottom.png" style="width: 600px;margin-right: 0;" />
-												</td>
-											</tr>
+<tr>
+	<td>
+		&nbsp;
+	</td>
+</tr>
+
+
 </tr>
 </table>
 <!-- End Body -->

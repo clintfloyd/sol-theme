@@ -44,7 +44,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			if (strpos($url,'admin-ajax.php') !== false){
 			?>
 			#template_container {
-				max-width: 640px;
+				max-width: 600px;
 			}
 			#template-selector form,
 			#template-selector a.logo,
@@ -175,7 +175,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
 				<tr>
 					<td align="center" valign="top">
-						<table border="0" cellpadding="0" cellspacing="0" width="600" id="template_container">
+						<table border="0" cellpadding="0" cellspacing="0" width="500" id="template_container">
 							<tr>
 								<td align="center" valign="top">
 									<!-- Header -->
@@ -198,13 +198,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 								</td>
 							</tr>
 							<tr>
-								<td align="center" valign="top">
+								<td align="center" valign="top" style="border-radius: 20px; background: white;">
 									<!-- Body -->
 									<table border="0" cellpadding="0" cellspacing="0" width="600" id="template_body">
 
 											<tr>
 												<td>
-													<img src="../wp-content/themes/soleil/woocommerce/emails/border-top.png" style="width: 600px;margin-right: 0;" />
+													&nbsp;
 												</td>
 											</tr>
 										<tr>
