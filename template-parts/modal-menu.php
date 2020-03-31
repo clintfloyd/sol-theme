@@ -112,6 +112,14 @@
 
 			<div class="menu-bottom">
 
+				<div class=" search-toggle-wrapper">
+
+					<a href="https://wa.me/97142251688" target="_blank">
+						<img src="<?php echo site_dir; ?>/assets/images/whatsapp.png" alt="whatsapp us" style="width: 350px; display: block; margin: 0 auto;" />
+					</a>
+
+				</div>
+
 				<?php if ( has_nav_menu( 'social' ) ) { ?>
 
 					<nav aria-label="<?php esc_attr_e( 'Expanded Social links', 'twentytwenty' ); ?>" role="navigation">
