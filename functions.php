@@ -31,7 +31,7 @@
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-
+define("site_dir", get_template_directory_uri());
 
  // // define woocommerce_order_status_completed callback function
  // function call_order_status_completed( $array ) {
