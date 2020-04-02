@@ -146,13 +146,11 @@
 							if ( true === $enable_header_search ) {
 								?>
 
-								<div class="toggle-wrapper search-toggle-wrapper">
+								<div class=" search-toggle-wrapper">
 
-									<button class="toggle search-toggle desktop-search-toggle" data-toggle-target=".search-modal" data-toggle-body-class="showing-search-modal" data-set-focus=".search-modal .search-field" aria-expanded="false">
-										<span class="toggle-inner">
-											<?php twentytwenty_the_theme_svg( 'search' ); ?>
-										</span>
-									</button><!-- .search-toggle -->
+									<a href="https://wa.me/97142251688" target="_blank">
+										<img src="<?php echo site_dir; ?>/assets/images/whatsapp.png" alt="whatsapp us" style="width: 160px;" />
+									</a>
 
 								</div>
 
